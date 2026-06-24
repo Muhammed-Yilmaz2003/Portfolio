@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Yilmaz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="logo">Alex<span>.</span></div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero" id="home">
+            <div class="hero-avatar">
+                <i class="fas fa-mug-saucer"></i>
+            </div>
+            <h1>
+                Hey, I'm <span class="highlight">Alex Rivera</span>
+            </h1>
+            <p class="tagline">
+                <i class="fas fa-code"></i> Full‑stack developer &amp; creative problem solver
+                <i class="fas fa-mug-hot"></i>
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> See my work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Say hello
+                </a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2 class="section-title">About me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        <i class="fas fa-leaf"></i> I'm a developer who loves crafting
+                        digital experiences that feel warm, human, and thoughtfully
+                        designed. With a background in full‑stack development and a
+                        soft spot for clean UI, I bring ideas to life with care.
+                    </p>
+                    <p>
+                        <i class="fas fa-heart"></i> Outside of code, you'll find me
+                        brewing pour‑over coffee, reading sci‑fi, or exploring
+                        quiet corners of the city.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="number" id="repoCount">—</div>
+                        <div class="label">GitHub repos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">4+</div>
+                        <div class="label">Years coding</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">12</div>
+                        <div class="label">Projects shipped</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">☕</div>
+                        <div class="label">Coffee / day</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title centered">Skills &amp; tools</h2>
+            <p class="section-sub">
+                Technologies I work with to build cozy, robust applications.
+            </p>
+            <div class="skills-grid">
+                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                <span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-tag"><i class="fas fa-cloud"></i> Netlify</span>
+                <span class="skill-tag"><i class="fas fa-server"></i> Express</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title centered">GitHub projects</h2>
+            <p class="section-sub">
+                A selection of my open‑source work — fetched live from GitHub.
+            </p>
+
+            <div id="projectsContainer">
+                <div class="loading-projects">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                    Loading projects…
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title centered">Let's connect</h2>
+            <div class="contact-wrap">
+                <p>
+                    <i class="fas fa-hand-peace"></i>
+                    I'd love to hear from you — whether it's a project, a
+                    collaboration, or just a friendly chat.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:alex@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2026 Alex Rivera &middot; crafted with
+                <span><i class="fas fa-heart"></i></span> &amp; ☕
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
